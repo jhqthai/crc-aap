@@ -1,0 +1,56 @@
+PART1: How to install Ansible on RHEL8
+
+https://www.redhat.com/sysadmin/ansible-quick-start
+sudo dnf install python3 python3-pip -y # maybe dont need this
+
+https://adamtheautomator.com/install-ansible/
+1. Install epel release to install ansible
+sudo dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+2. Install ansible
+sudo dnf install ansible
+sudo dnf install  --enablerepo epel-playground ansible #try this line if above line doesnt work
+
+3. Configure ansible host 
+vi /etc/ansible/hosts
+
+4. Configure ansible.cfg to disable host_key_checking to not having to log in everytime on host [optional] - This should not be done in production insecure
+vi /etc/ansible/ansible.cfg
+# uncomment 
+host_key_checking = False
+
+5. Set up key in both servers
+https://medium.com/openinfo/ansible-ssh-private-public-keys-and-agent-setup-19c50b69c8c
+# Multiple ssh key setup
+https://stackoverflow.com/questions/2419566/best-way-to-use-multiple-ssh-private-keys-on-one-client
+
+
+6. Test - Run the following command in cmd
+ansible clientName -m ping
+
+---------------------
+
+
+#might need to mange host key checking
+https://docs.ansible.com/ansible/latest/user_guide/connection_details.html#setting-up-ssh-keys
+cd /etc/ansible/ansible.cfg
+....
+#set a key pair 
+https://medium.com/openinfo/ansible-ssh-private-public-keys-and-agent-setup-19c50b69c8c
+
+#try pinging client from server with ansible
+
+sqlplus / AS sysdba
+
+https://chartio.com/resources/tutorials/how-to-create-a-user-and-grant-permissions-in-oracle/
+CONNECT username/password@[//]host[:port][/service_name]
+
+Guide:
+https://www.redhat.com/sysadmin/ansible-quick-start
+https://docs.ansible.com/ansible/latest/user_guide/connection_details.html#setting-up-ssh-keys
+
+Note:
+Ansible is an agentless engine. Relies on ssh to connect to its target.
+
+- Ensure that python is installed on client node.
+

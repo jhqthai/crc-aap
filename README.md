@@ -15,8 +15,9 @@ Source: https://adamtheautomator.com/install-ansible/
 
 4. Configure ansible.cfg to disable host_key_checking to not having to log in everytime on host [optional] - Avoid in production as insecure
 > `sudo vi /etc/ansible/ansible.cfg`
-> Set the following line in the file as below.
-> `host_key_checking = False`
+
+> Then set the following line in the file as follow.
+>> `host_key_checking = False`
 
 5. Set up key in both servers 
 > 5.1 Single ssh key

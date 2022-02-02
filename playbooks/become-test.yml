@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: whoami?
+      command: whoami
+      register: command_output
+
+    - debug:
+        var: command_output.stdout_lines

@@ -2,14 +2,14 @@
 Source: https://adamtheautomator.com/install-ansible/
 
 1. Install epel release to install ansible
-`sudo dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm`
+> `sudo dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm`
 
 2. Install ansible
-`sudo dnf install ansible`
+> `sudo dnf install ansible`
 
 Note: Try the command below if the above command does not work
 
-`sudo dnf install  --enablerepo epel-playground ansible`
+> `sudo dnf install  --enablerepo epel-playground ansible`
 
 3. Configure ansible host by adding the host name or ip address to the file below
 
@@ -17,7 +17,7 @@ Note: Try the command below if the above command does not work
 
 4. Configure ansible.cfg to disable host_key_checking to not having to log in everytime on host [optional] - Avoid in production as insecure
 
-    `sudo vi /etc/ansible/ansible.cfg`
+`sudo vi /etc/ansible/ansible.cfg`
 
 4.1 Set the following line in the file as below.
 

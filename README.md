@@ -48,7 +48,8 @@ pipelining = True
     allow_world_readable_tmpfiles: True
 ```
 
-**Set up environment path for oracle managed nodes to use oracle db functinality**
+**Set up environment path for oracle managed nodes to use oracle db functionality**
+
 *Method 1: Set environment individually to each task*
 ```
 - name: run shell script in oracle servers

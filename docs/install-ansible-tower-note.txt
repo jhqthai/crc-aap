@@ -9,7 +9,6 @@ https://access.redhat.com/solutions/253273
 https://access.redhat.com/management
 
 
-
 Enabling or disabling a repository using Red Hat Subscription Management
 https://access.redhat.com/solutions/265523
 

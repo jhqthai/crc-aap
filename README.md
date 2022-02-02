@@ -20,10 +20,10 @@ Source: https://adamtheautomator.com/install-ansible/
 
 5. Set up key in both servers 
 > 5.1 Single ssh key
-> Source: https://medium.com/openinfo/ansible-ssh-private-public-keys-and-agent-setup-19c50b69c8c
+>> Source: https://medium.com/openinfo/ansible-ssh-private-public-keys-and-agent-setup-19c50b69c8c
 
 > 5.2 Multiple ssh key setup
-> Source: https://stackoverflow.com/questions/2419566/best-way-to-use-multiple-ssh-private-keys-on-one-client
+>> Source: https://stackoverflow.com/questions/2419566/best-way-to-use-multiple-ssh-private-keys-on-one-client
 
 6. Test - Run the following command in cmd
 > `ansible clientName -m ping`

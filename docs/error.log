@@ -1,0 +1,1 @@
+fatal: [oracle_db1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: chmod: invalid mode", "unreachable": true}

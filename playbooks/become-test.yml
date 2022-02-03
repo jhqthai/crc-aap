@@ -1,6 +1,9 @@
 ---
 - hosts: all
-
+  become: yes
+  vars:
+    allow_world_readable_tmpfiles: True
+    
   tasks:
     - name: whoami?
       command: whoami

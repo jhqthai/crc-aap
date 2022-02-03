@@ -1,11 +1,6 @@
 ---
 - hosts: all
-  become: yes
-  become_method: sudo
-  become_user: oracle
-  vars:
-    allow_world_readable_tmpfiles: True
-    
+
   tasks:
     - name: whoami?
       command: whoami
